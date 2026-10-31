@@ -76,6 +76,17 @@ guest mode).
 `Next.js` `TypeScript` `Supabase` `Vercel`
 [budget-tracker-green-alpha.vercel.app](https://budget-tracker-green-alpha.vercel.app/)
 
+### travelBuddy — Group Trip Companion
+Mobile-first trip planner and expense splitter for group travel. No accounts —
+join with an invite code and your name. Every table is RLS-locked with zero
+client-side policies; all writes go through server-side route handlers using
+a service-role key. Private per-person spending is PIN-protected (scrypt-hashed, constant-time compare). Realtime sync via Supabase broadcast, with
+Excel import (client-side parsing, editable preview before saving), split
+itineraries for sub-groups, multi-currency support, and a post-trip PDF/CSV
+memoir export before auto-delete.
+`Next.js` `TypeScript` `Supabase` `Realtime` `Security`
+[traveloh.vercel.app](https://traveloh.vercel.app/)
+
 ### ERP Portal Frontends
 Built the frontend foundation for independently-deployed service portals
 (separate DB and App Service each, system-to-system integration).
@@ -97,6 +108,7 @@ Git · CI/CD · Automated Testing
 
 ## Roadmap
 - [x] Published reusable packages
+- [x] Hands-on Next.js (App Router, TypeScript) — shipped on two projects: Budget Tracker and travelBuddy
 - [ ] Deepen .NET: ASP.NET Core API, EF Core, background workers
 - [ ] CI/CD pipeline (GitHub Actions) on an existing project
 - [ ] HashiCorp Terraform Associate certification
